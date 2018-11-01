@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>    
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/login.css"/>
+</head>
+
+<body>
+
+<!--头部-->
+<!--<div th:include="layout/header :: header"/>-->
+
+<!--登录-->
+<div class="sso-box login">
+    <div class="header clearfix">
+        <h3 class="f_left">欢迎登录</h3>
+        <a id="registAid" href="#" class="f_right">注册</a>
+    </div>
+    <div class="content">
+        <form action="">
+            <div class="phone">
+                <span>账号：</span>
+                <input type="text" placeholder="手机号/旧版账号" maxlength="11"/>
+                <span class="hidden width_100">您输入的手机号码有误</span>
+            </div>
+
+            <div class="password">
+                <span>登录密码：</span>
+                <input type="password" placeholder="请输入密码"/>
+                <span class="hidden width_100">您输入的密码有误</span>
+            </div>
+            <div class="verify">
+                <span>验证码：</span>
+                <input type="text" class="width_min" maxlength="4"/>
+                <img src="" alt=""/>
+                <button>换一张</button>
+                <span class="hidden width_100">验证码输入错误</span>
+            </div>
+        </form>
+        <div class="protocol">
+            <a id="resetPasswordAid" href="#">忘记密码？</a>
+        </div>
+        <div class="submit">登录</div>
+        <p class="msg hidden">请填全信息</p>
+    </div>
+</div>
+
+<!--footer-->
+<!--<div th:include="layout/footer :: footer"/>-->
+
+<script src="/js/jquery-1.11.3.js"></script>
+<!--<script src="/js/header.js"></script>-->
+<script src="/js/jquery-1.4.1.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+<script src="/js/login.js"></script>
+
+</body>
+</html>

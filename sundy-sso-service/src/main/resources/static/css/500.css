@@ -1,0 +1,37 @@
+.hq-systemBusy {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.system-Busy {
+    width: 610px;
+    height: 172px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.system-Busy .busy_img {
+    width: 100%;
+    text-align: center;
+}
+
+.system-Busy .busy_img img {
+    width: 160px;
+    height: 104px;
+}
+
+.system-Busy .busy_text {
+    width: 100%;
+    text-align: center;
+}
+
+.system-Busy .busy_text h2 {
+    font-size: 24px;
+    color: #666;
+    line-height: 15px;
+    letter-spacing: 2.2px;
+}

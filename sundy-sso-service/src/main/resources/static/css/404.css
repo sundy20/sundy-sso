@@ -1,0 +1,66 @@
+/*系统繁忙*/
+.hq-path {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.hq-path-content {
+    width: 1200px;
+    height: 400px;
+    margin: 50px 0 100px 0;
+    border: 1px solid #e1e1e1;
+}
+
+.pathError {
+    width: 430px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.hq-path-content .error-img {
+    float: left;
+}
+
+.hq-path-content .error-img img {
+    width: 128px;
+    height: 133px;
+}
+
+.hq-path-content .error-text {
+    float: left;
+    color: #666;
+    margin-left: 36px;
+}
+
+.hq-path-content .error-text h2 {
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+
+.hq-path-content .error-text p {
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 17px;
+}
+
+.backIndex {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    color: #00A0E9;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    margin-top: 17px;
+    text-decoration: none;
+}

@@ -1,0 +1,76 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: sundy-sso-service
+  redis:
+    host: localhost
+    port: 7000
+    password: root
+    timeout: 0
+    pool:
+      # 最大可用连接数（默认为8，负数表示无限）
+      max-active: 8
+      # 最大空闲连接数（默认为8，负数表示无限）
+      max-idle: 8
+      # 最小空闲连接数（默认为0，该值只有为正数才有作用）
+      min-idle: 0
+      # 从连接池中获取连接最大等待时间（默认为-1，单位为毫秒，负数表示无限）
+      max-wait: -1
+
+#redis 集群模式配置
+#    cluster:
+#      nodes:
+#        - 172.19.177.2:7000
+#        - 172.19.177.2:7001
+#        - 172.19.177.2:7002
+
+  aop:
+    auto: true
+    proxy-target-class: true
+
+  thymeleaf:
+    cache: false
+    check-template-location: false
+    content-type: text/html
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+
+sso:
+  jwtToken:
+    cookie:
+      domain: xxxx.com
+      loginCount: 3
+      loginPrefix: sso_login_count_%s
+      caotchaKey: sso_login_captcha_%s
+      name: jwtCookieLoginKey
+      tokenExpirationTime: 30
+      tokenSigningKey: sF9xm8EV6Hy5RMFK4EEACIDAwQus7Yhk
+
+dubbo:
+  application:
+    name: sundy-sso-service
+    logger: slf4j
+    qosEnable: false
+  protocol:
+    name: dubbo
+    port: 20881
+    status: server
+    server: netty4
+  registry:
+    protocol: zookeeper
+    address: localhost:2181
+    file: /tmp/cache/sundy-sso-service.cache
+
+logging:
+  level:
+    ROOT: error
+    org.springframework: info
+    com.gjmetal: info
+
+management:
+  security:
+    enabled: false

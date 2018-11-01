@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="header">
+    <div class="header">
+        <!--top-bar-->
+        <div class="top-bar">
+            <div class="content clearfix">
+                <div class="top-bar-left fl inline-block-wrap">
+                    <a class="inline-block home" th:href="@{/index}">
+                        <span class="fa fa-home"></span>首页</a>
+                    <span class="inline-block icon-bar"></span>
+                    <a class="inline-block" href="#">产品与服务
+                        <span class="fa fa-caret-down">
+                </span>
+                    </a>
+                </div>
+                <div class="top-bar-right fr">
+                    <div class="login-register fl inline-block-wrap">
+                        <a class="inline-block" href="/tologin">登录</a>
+                        <span class="inline-block icon-bar"></span>
+                        <a class="inline-block" href="/toregist">注册</a>
+                    </div>
+                    <div class="service-line fl inline-block-wrap">
+                        <span class="inline-block">客服热线：<a href="#" class="phone-num">021-</a></span>
+                    </div>
+                    <div class="language fr inline-block-wrap">
+                        <a class="inline-block" href="#">中文</a>
+                        <span class="inline-block icon-bar"></span>
+                        <a class="inline-block" href="#">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--logo&navbar-->
+        <div class="header-main">
+            <div class="content">
+                <div class="logo fl">
+                    <img src="/images/logo.jpg" class="img-responsive" alt="logo"/>
+                </div>
+                <div class="fl nav">
+                    <ul class="nav-content" id="allHeaderUL">
+                        <li class="fl inline-block-wrap text-center relative" id="navDrop">
+                            <a class="inline-block active" id="nav_01" th:href="@{/index}"><span>首页
+                                <!-- <span class="fa fa-caret-down"></span> --></span></a>
+                        </li>
+                        <li class="fl inline-block-wrap text-center"><a id="nav_02" class="inline-block"
+                                                                        href="/rest/news/toNewsMain"><span>资讯</span></a>
+                        </li>
+                        <li class="fl inline-block-wrap text-center"><a id="nav_03" class="inline-block" href="#"><span>数据</span></a>
+                        </li>
+                        <li class="fl inline-block-wrap text-center"><a id="nav_04" class="inline-block" href="#"><span>资源</span></a>
+                        </li>
+                        <li class="fl inline-block-wrap text-center"><a id="nav_05" class="inline-block" href="#"><span>产品</span></a>
+                        </li>
+                        <li class="fl inline-block-wrap text-center"><a id="nav_06" class="inline-block" href="#"><span>会展</span></a>
+                        </li>
+                        <li class="clearfix-ele"></li>
+                    </ul>
+                </div>
+                <form class="search-form fl" action="#" id="searchForm">
+                    <div class="form-group relative">
+                        <!--<span class="fa fa-search absolute search_1"></span>-->
+                        <input type="text" value="搜索关键字" id="search"/>
+                        <span class="absolute search_1"></span>
+                    </div>
+                    <div class="cleafix-ele"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

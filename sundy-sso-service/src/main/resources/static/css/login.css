@@ -1,0 +1,273 @@
+/*登录*/
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.sso-box {
+    font-family: "Microsoft Yahei", Arial;
+}
+
+.sso-box a {
+    text-decoration: none;
+}
+
+.sso-box .header {
+    border-bottom: 1px dashed #eee;
+    padding: 0 15px;
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .sso-box {
+        width: 1000px;
+        margin: 30px auto;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        box-shadow: 1px 3px 3px #eee;
+    }
+
+    .sso-box .header {
+        width: 902px;
+        height: 80px;
+        margin: 0 auto;
+    }
+}
+
+.sso-box.login .content form .verify {
+    height: 38px;
+    position: relative;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.sso-box p.msg {
+    font: 12px/20px "Microsoft YaHei";
+    color: #ED6D00;
+    /* margin-left: 166px; */
+}
+
+.sso-box .header h3 {
+    font: 18px/80px "Microsoft YaHei";
+    padding: 0;
+    margin: 0;
+}
+
+.sso-box .header h3 small {
+    font-size: .8em;
+}
+
+.sso-box .header a {
+    display: inline;
+    width: 90px;
+    height: 38px;
+    border: 1px solid #e2e2e2;
+    font: 18px/38px "Microsoft YaHei";
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 21px;
+    color: #000;
+}
+
+.sso-box .content {
+    padding: 15px;
+}
+
+.sso-box .content form span {
+    display: inline-block;
+    width: 78px;
+    text-align: left;
+    font: 14px/36px "微软雅黑";
+    vertical-align: middle;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .sso-box .content {
+        width: 420px;
+        margin: 59px auto 0;
+    }
+
+    .sso-box .content form span {
+        text-align: right;
+    }
+}
+
+.sso-box .content form span.hidden {
+    display: none;
+}
+
+.sso-box .content form span.width_100 {
+    width: 138px;
+    font: 12px/36px "Microsoft YaHei";
+    color: #ED6D00;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.sso-box .content form input {
+    height: 34px;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    /*border-radius: 4px;*/
+    /*padding-left: 6px;*/
+    text-indent: 6px;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .sso-box .content form input {
+        width: 335px;
+    }
+
+    .sso-box.reset .content form input,
+    .sso-box.resetPass .content form input {
+        width: 100%;
+    }
+}
+
+.sso-box .content form input.width_min {
+    width: 100px;
+}
+
+.sso-box .content form div {
+    margin-bottom: 33px;
+    line-height: 34px;
+}
+
+.sso-box.register .content form .verify {
+    height: 38px;
+    position: relative;
+}
+
+.sso-box .content form .verify img {
+    width: 100px;
+    height: 36px;
+    display: inline-block;
+    position: absolute;
+}
+
+.sso-box .content form button {
+    height: 36px;
+    width: 100px;
+    margin-left: 12px;
+    font: 14px/36px "微软雅黑";
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    background: #016ad7;
+    border: none;
+    cursor: pointer;
+    margin-left: 110px;
+}
+
+.sso-box.register .content form button {
+    margin-left: 10px;
+}
+.sso-box.reset .content form button {
+    margin-left: 10px;
+}
+
+.sso-box .protocol,
+.sso-box .protocol i {
+    vertical-align: middle;
+    text-align: right;
+}
+
+.register .protocol i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: -2px 10px 0 0;
+    cursor: pointer;
+    /* float: left;
+    position: relative;
+    top: -2px;*/
+}
+
+.register .protocol i.active {
+    background: url('../images/bov-d.png') 0 0 no-repeat;
+}
+
+.sso-box .protocol a {
+    font: 14px/14px "微软雅黑";
+    color: #006ad7;
+}
+
+.sso-box .submit {
+    height: 57px;
+    background: #006ad7;
+    color: #fff;
+    font: 16px/56px "Microsoft YaHei";
+    text-align: center;
+    cursor: pointer;
+    margin: 44px 0;
+}
+
+@media (min-width: 768px) {
+    .sso-box .submit {
+        width: 422px;
+    }
+}
+
+.reset .content form input.width_min {
+    width: 164px;
+}
+
+.reset .content form input.width_mins {
+    width: 209px;
+}
+
+.reset .content form div {
+    margin-bottom: 33px;
+}
+
+.sso-box.reset .content form .verify {
+    height: 38px;
+    position: relative;
+}
+
+.reset .content form .verify img {
+    width: 82px;
+    height: 36px;
+    display: inline-block;
+    position: absolute;
+}
+
+/* 阅读并接受《上海金属网用户协议》 */
+.protocol-box {
+    /* width: 1190px; */
+    margin: 0 auto;
+    padding: 0 5px 2em;
+    /* background: #fff; */
+    font-family: "Microsoft Yahei", Arial;
+}
+
+@media (min-width: 768px) {
+    .protocol-box {
+        width: 1190px;
+    }
+}
+
+.protocol-box h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.protocol-box p {
+    line-height: 24px;
+}
+
+.protocol-box p.indent {
+    text-indent: 30px;
+}
